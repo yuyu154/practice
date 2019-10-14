@@ -1,7 +1,9 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class Client {
 
     public static void main(String[] args) {
-        Program program = new OldProgram();
-        program.proceed();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
     }
 }
