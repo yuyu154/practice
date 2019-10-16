@@ -1,2 +1,3 @@
 rootProject.name = 'jwp-pattern'
+include 'test'
 
