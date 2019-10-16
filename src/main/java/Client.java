@@ -18,6 +18,6 @@ public class Client {
     }
 
     private static Program getOldProgram() {
-        return new OldProgram();
+        return new Adapter(new NewProgram());
     }
 }
