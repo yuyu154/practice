@@ -2,12 +2,14 @@ package com.example.websocket;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.web.socket.messaging.WebSocketStompClient;
+import org.springframework.web.socket.sockjs.client.SockJsClient;
 
-@SpringBootTest
-class WebsocketApplicationTests {
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+public class WebsocketApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void webSocketTest() {
+		WebSocketStompClient stompClient = new WebSocketStompClient(new SockJsClient());
 	}
-
 }
